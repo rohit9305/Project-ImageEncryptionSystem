@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Sum of Two Numbers</title>
+</head>
+<body>
+  <h2>Sum Calculator</h2>
+  `
+  <input type="text" id="sumResult" placeholder="Sum will appear here" readonly />
+
+  <script>
+    // Prompt 
+    let num1 = prompt("Enter the first number:");
+    let num2 = prompt("Enter the second number:");
+
+    // Convert input to numbers
+    num1 = parseFloat(num1);
+    num2 = parseFloat(num2);
+
+    // Calculate the sum
+    let sum = num1 + num2;
+
+    // Display the result in the text box
+    document.getElementById("sumResult").value = sum;
+  </script>
+</body>
+</html>
